@@ -18,8 +18,8 @@ set.backup = false
 set.undodir = os.getenv("HOME") .. "/.vim/undodir"
 set.undofile = true
 
-set.hlsearch = false
-set.incsearch = true
+-- set.hlsearch = false
+-- set.incsearch = true
 
 set.fileencoding = 'utf-8'
 set.termguicolors = true

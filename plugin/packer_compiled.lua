@@ -79,10 +79,70 @@ _G.packer_plugins = {
     path = "/nfs/homes/revieira/.local/share/nvim/site/pack/packer/start/42header",
     url = "https://github.com/42paris/42header"
   },
+  LuaSnip = {
+    loaded = true,
+    path = "/nfs/homes/revieira/.local/share/nvim/site/pack/packer/start/LuaSnip",
+    url = "https://github.com/L3MON4D3/LuaSnip"
+  },
+  ["cmp-buffer"] = {
+    loaded = true,
+    path = "/nfs/homes/revieira/.local/share/nvim/site/pack/packer/start/cmp-buffer",
+    url = "https://github.com/hrsh7th/cmp-buffer"
+  },
+  ["cmp-nvim-lsp"] = {
+    loaded = true,
+    path = "/nfs/homes/revieira/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  ["cmp-path"] = {
+    loaded = true,
+    path = "/nfs/homes/revieira/.local/share/nvim/site/pack/packer/start/cmp-path",
+    url = "https://github.com/hrsh7th/cmp-path"
+  },
+  cmp_luasnip = {
+    loaded = true,
+    path = "/nfs/homes/revieira/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
+    url = "https://github.com/saadparwaiz1/cmp_luasnip"
+  },
+  ["friendly-snippets"] = {
+    loaded = true,
+    path = "/nfs/homes/revieira/.local/share/nvim/site/pack/packer/start/friendly-snippets",
+    url = "https://github.com/rafamadriz/friendly-snippets"
+  },
   harpoon = {
     loaded = true,
     path = "/nfs/homes/revieira/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/ThePrimeagen/harpoon"
+  },
+  ["lspkind.nvim"] = {
+    loaded = true,
+    path = "/nfs/homes/revieira/.local/share/nvim/site/pack/packer/start/lspkind.nvim",
+    url = "https://github.com/onsails/lspkind.nvim"
+  },
+  ["lspsaga.nvim"] = {
+    loaded = true,
+    path = "/nfs/homes/revieira/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
+    url = "https://github.com/glepnir/lspsaga.nvim"
+  },
+  ["mason-lspconfig.nvim"] = {
+    loaded = true,
+    path = "/nfs/homes/revieira/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
+    url = "https://github.com/williamboman/mason-lspconfig.nvim"
+  },
+  ["mason.nvim"] = {
+    loaded = true,
+    path = "/nfs/homes/revieira/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["nvim-cmp"] = {
+    loaded = true,
+    path = "/nfs/homes/revieira/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/nfs/homes/revieira/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-treesitter"] = {
     loaded = true,
@@ -119,6 +179,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/nfs/homes/revieira/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
+  },
+  ["vim-commentary"] = {
+    loaded = true,
+    path = "/nfs/homes/revieira/.local/share/nvim/site/pack/packer/start/vim-commentary",
+    url = "https://github.com/tpope/vim-commentary"
+  },
+  ["vim-python-pep8-indent"] = {
+    loaded = true,
+    path = "/nfs/homes/revieira/.local/share/nvim/site/pack/packer/start/vim-python-pep8-indent",
+    url = "https://github.com/Vimjas/vim-python-pep8-indent"
   }
 }
 
