@@ -36,5 +36,9 @@ return require('packer').startup(function(use)
 	use ('onsails/lspkind.nvim')
 	use ("hrsh7th/cmp-nvim-lsp")
 	use ({ "glepnir/lspsaga.nvim", branch = "main" })
-	use("nvim-tree/nvim-web-devicons")
+	use ("nvim-tree/nvim-web-devicons")
+	use ('prichrd/netrw.nvim')
+
+	--Floaterm
+	use ('voldikss/vim-floaterm')
 end)
