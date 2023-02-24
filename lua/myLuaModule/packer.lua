@@ -41,4 +41,7 @@ return require('packer').startup(function(use)
 
 	--Floaterm
 	use ('voldikss/vim-floaterm')
+
+	--Smart Column
+	use ("m4xshen/smartcolumn.nvim")
 end)
