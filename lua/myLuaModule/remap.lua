@@ -1,15 +1,23 @@
+local keymap = vim.keymap
+
 vim.g.mapleader = " "
 
-vim.keymap.set("i", "jk", "<ESC>")
+keymap.set("i", "jk", "<ESC>")
 
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+keymap.set("n", "<leader>pv", vim.cmd.Ex)
+keymap.set("n", "<leader>o", vim.cmd.Rex)
+keymap.set("n", "<leader>o", vim.cmd.bd)
 
-vim.keymap.set("v", "J", "m: '>+1<CR>gv=gv")
-vim.keymap.set("v", "K", "m: '<-2<CR>gv=gv")
+keymap.set("n", "<leader>h", ":Stdheader<CR>")
+keymap.set("n", "<leader>g", "gg=G")
+keymap.set("n", "<leader>w", ":w<CR>")
+keymap.set("n", "<leader>q", ":q<CR>")
 
-vim.keymap.set("n", "<leader>h", ":Stdheader<CR>")
-vim.keymap.set("n", "<leader>g", "gg=G")
-vim.keymap.set("n", "<leader>w", ":w<CR>")
-vim.keymap.set("n", "<leader>q", ":q<CR>")
+keymap.set("n", "<C-j>", "<cmd>m +1 <CR>")
+keymap.set("n", "<C-k>", "<cmd>m.-2 <CR>")
+keymap.set("v", "<C-j>", ":m '>+1<CR>gv=gv")
+keymap.set("v", "<C-k>", ":m '<-2<CR>gv=gv")
 
-vim.g.floaterm_keymap_new    = '<leader>ft'
+keymap.set("n", "<leader><leader>", function()
+    vim.cmd("so")
+end)
