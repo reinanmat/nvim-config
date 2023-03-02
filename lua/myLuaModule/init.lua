@@ -1,3 +1,3 @@
 require("myLuaModule.remap")
 require("myLuaModule.packer")
-require("myLuaModule.settings")
+require("myLuaModule.set")
