@@ -69,14 +69,7 @@ return require('packer').startup(function(use)
 	--	Aesthetics
 	use	("m4xshen/smartcolumn.nvim")
 	use	({ 'nvim-lualine/lualine.nvim', opt = true })
-	use	{
-		'rose-pine/neovim',
-		as = 'rose-pine',
-		config = function()
-			require("rose-pine").setup()
-			vim.cmd('colorscheme rose-pine')
-		end
-	}
+	use	({ 'rose-pine/neovim', as = 'rose-pine' })
 	--	42 Plugins
 	use	("42paris/42header")
 	--	Autocompletion
