@@ -1,5 +1,52 @@
 vim.cmd [[packadd packer.nvim]]
 
+local fn = vim.fn
+local api = vim.api
+
+local install_dir = fn.stdpath("data") .. "/site/pack/packer/start/"
+api.nvim_call_function("mkdir", { install_dir, "p" })
+local install_path = install_dir .. "packer.nvim"
+
+-- Automatically install packer
+if fn.empty(fn.glob(install_path)) > 0 then
+	PACKER_BOOTSTRAP = fn.system({
+		"git",
+		"clone",
+		"--depth",
+		"1",
+		"https://github.com/wbthomason/packer.nvim",
+		install_path,
+	})
+	print("Installing packer close and reopen Neovim...")
+	vim.cmd([[packadd packer.nvim]])
+end
+
+-- Autocommand that reloads neovim whenever you save the plugins.lua file
+vim.cmd([[
+  augroup packer_user_config
+    autocmd!
+    autocmd BufWritePost plugins.lua source <afile> | PackerSync
+  augroup end
+]])
+
+-- Use a protected call so we don't error out on first use
+local status_ok, packer = pcall(require, "packer")
+if not status_ok then
+	return
+end
+
+-- Have packer use a popup window
+packer.init({
+	display = {
+		open_fn = function()
+			return require("packer.util").float({ border = "rounded" })
+		end,
+	},
+	git = {
+		clone_timeout = 300, -- Timeout, in seconds, for git clones
+	},
+})
+
 return require('packer').startup(function(use)
 
 	--	Plugins Mangagers
