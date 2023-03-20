@@ -61,6 +61,7 @@ return require('packer').startup(function(use)
 	use	('ThePrimeagen/harpoon')
 	use	('prichrd/netrw.nvim')
 	use	('mbbill/undotree')
+	use ('christoomey/vim-tmux-navigator')
 	--	Syntax Highlighting
 	use	('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 	use	('Vimjas/vim-python-pep8-indent')
