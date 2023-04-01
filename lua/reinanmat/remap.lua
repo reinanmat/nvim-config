@@ -20,6 +20,8 @@ keymap.set("n", "<leader>sh", "<C-w>s")
 keymap.set("n", "<leader>se", "<C-w>=")
 keymap.set("n", "<leader>sx", ":close<CR>")
 
+keymap.set("n", "<C-j>", "<cmd>m +1 <CR>")
+keymap.set("n", "<C-k>", "<cmd>m.-2 <CR>")
 keymap.set("v", "<C-j>", ":m '>+1<CR>gv=gv")
 keymap.set("v", "<C-k>", ":m '<-2<CR>gv=gv")
 
