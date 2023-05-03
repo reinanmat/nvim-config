@@ -61,7 +61,6 @@ return require('packer').startup(function(use)
 	use	('ThePrimeagen/harpoon')
 	use	('prichrd/netrw.nvim')
 	use	('mbbill/undotree')
-	use ('christoomey/vim-tmux-navigator')
 	--	Syntax Highlighting
 	use	('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 	use	('Vimjas/vim-python-pep8-indent')
@@ -71,7 +70,6 @@ return require('packer').startup(function(use)
 	use	({ 'rose-pine/neovim', as = 'rose-pine' })
 	use ('nvim-lualine/lualine.nvim')
 	use ('yorik1984/lualine-theme.nvim')
-	use	('m4xshen/smartcolumn.nvim')
 	--	42 Plugins
 	use	("42paris/42header")
 	--	Autocompletion
@@ -90,9 +88,4 @@ return require('packer').startup(function(use)
 	--	Dependencies
 	use	('kyazdani42/nvim-web-devicons')
 	use	('nvim-lua/plenary.nvim')
-
-	--	Terminal
-	use {"akinsho/toggleterm.nvim", tag = '*', config = function()
-		require("toggleterm").setup()
-	end}
 end)
