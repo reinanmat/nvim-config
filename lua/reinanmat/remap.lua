@@ -31,6 +31,8 @@ keymap.set("x", "<leader>p", [["_dP]])
 keymap.set({"n", "v"}, "<leader>y", [["+y]])
 keymap.set("n", "<leader>Y", [["+Y]])
 
+keymap.set("n", "<leader>if", "=i{")
+
 keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
